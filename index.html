@@ -533,6 +533,29 @@
     <p>
       &copy; 2025 All Rights Reserved. Design by
       <a href="https://html.design/">Ovaltine</a>
+      <div class="flex items-center text-blue-600">
+        <i class="fas fa-signal"></i>
+        <span class="ml-2">Người truy cập: <span id="visitor-count">0</span></span>
+    </div>
+
+    <script>
+        // Lấy số người truy cập từ localStorage
+        let visitorCount = localStorage.getItem('visitorCount');
+
+        // Nếu chưa có số người truy cập, khởi tạo là 0
+        if (!visitorCount) {
+            visitorCount = 0;
+        }
+
+        // Tăng số người truy cập lên 1
+        visitorCount++;
+
+        // Lưu số người truy cập vào localStorage
+        localStorage.setItem('visitorCount', visitorCount);
+
+        // Hiển thị số người truy cập
+        document.getElementById('visitor-count').innerText = visitorCount;
+    </script>
     </p>
   </footer>
   <!-- footer section -->
