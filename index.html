@@ -536,7 +536,10 @@
     <p>
       &copy; 2025 All Rights Reserved. Design by
       <a href="https://html.design/">Ovaltine</a>
-     <head>
+     
+    </p>
+  </footer>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đếm Số Lượng Truy Cập</title>
@@ -576,13 +579,17 @@
         });
     </script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="bg-white p-8 rounded shadow-md text-center">
-        <p class="text-lg font-semibold">Số lượng người truy cập: <span id="visitCount" class="text-blue-500">0</span></p>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <div class="flex-grow flex items-center justify-center">
+        <div class="bg-white p-8 rounded shadow-md text-center">
+            <h1 class="text-2xl font-bold mb-4">Trang Chủ</h1>
+            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Nhấp vào đây</a>
+        </div>
     </div>
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p class="text-lg">Số lượng người truy cập: <span id="visitCount" class="text-yellow-400">0</span></p>
+    </footer>
 </body>
-    </p>
-  </footer>
   <!-- footer section -->
 
   <script src="js/jquery-3.4.1.min.js"></script>
